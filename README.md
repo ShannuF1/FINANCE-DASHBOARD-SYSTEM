@@ -37,13 +37,19 @@ Method: POST
 URL: http://localhost:5000/register
 
 Body (Raw JSON):
+
 JSON
+
+
 {
   "name": "Admin User",
   "email": "admin@test.com",
   "password": "password123",
   "role": "admin"
 }
+
+
+
 Step 2: Login to Get Token
 This step generates your "Digital Key" (JWT).
 
