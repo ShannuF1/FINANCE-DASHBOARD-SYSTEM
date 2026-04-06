@@ -19,14 +19,20 @@ npm init -y
 
 # 2. Install required dependencies
 npm install express sqlite3 jsonwebtoken bcryptjs cors
-3. Running the Server
+
+
+# 3. Running the Server
 To start the application, run:
 
 Bash
+
 node Express.js
+
 The terminal should display: Server running on port 5000.
 
 🛠️ Testing with Postman (Step-by-Step)
+
+
 Follow these steps in order to test the API correctly.
 
 Step 1: Register an Admin User
@@ -64,9 +70,12 @@ JSON
   "email": "admin@test.com",
   "password": "password123"
 }
+
+
 Action: Copy the long string inside the "token": "..." response. Do not include the quotes.
 
 Step 3: Add a Financial Record
+
 Method: POST
 
 URL: http://localhost:5000/records
@@ -86,7 +95,11 @@ JSON
   "category": "Freelance",
   "notes": "Web Design Project"
 }
+
+
 Step 4: View the Dashboard
+
+
 Check your total balance and summaries.
 
 Method: GET
@@ -100,6 +113,8 @@ Key: Authorization
 Value: [Paste your token]
 
 🌐 Built With
+
+
 Express.js - Web Framework
 
 SQLite3 - Database
